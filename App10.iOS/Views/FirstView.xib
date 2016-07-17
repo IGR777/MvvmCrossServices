@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstView">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="TextArg1" destination="17" id="name-outlet-17"/>
+                <outlet property="TextArg2" destination="19" id="name-outlet-19"/>
+                <outlet property="TextResult" destination="21" id="name-outlet-21"/>
+                <outlet property="CalcButton" destination="22" id="name-outlet-22"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="17" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="139" y="109" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <constraints>
+                        <constraint id="25" firstAttribute="width" constant="97"/>
+                    </constraints>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="18" translatesAutoresizingMaskIntoConstraints="NO" text="+">
+                    <rect key="frame" x="160" y="168" width="42" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="34" firstAttribute="width" constant="42"/>
+                    </constraints>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="19" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="132" y="218" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <constraints>
+                        <constraint id="37" firstAttribute="width" constant="97"/>
+                    </constraints>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="=" lineBreakMode="tailTruncation" minimumFontSize="10" id="20" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="151" y="290" width="42" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="40" firstAttribute="width" constant="42"/>
+                    </constraints>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="21" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="244" y="256" width="42" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="22" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="158" y="356" width="46" height="30"/>
+                    <state key="normal" title="Calculate">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <constraints>
+                        <constraint id="43" firstAttribute="width" constant="46"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint id="30" firstItem="17" firstAttribute="top" secondItem="2" secondAttribute="top" constant="109"/>
+                <constraint id="31" firstItem="17" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="139"/>
+                <constraint id="32" firstItem="18" firstAttribute="top" secondItem="2" secondAttribute="top" constant="168"/>
+                <constraint id="33" firstItem="18" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="160"/>
+                <constraint id="35" firstItem="19" firstAttribute="top" secondItem="2" secondAttribute="top" constant="218"/>
+                <constraint id="36" firstItem="19" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="132"/>
+                <constraint id="38" firstItem="2" firstAttribute="bottom" secondItem="20" secondAttribute="bottom" constant="289"/>
+                <constraint id="39" firstItem="20" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="151"/>
+                <constraint id="41" firstItem="2" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" constant="214"/>
+                <constraint id="42" firstItem="22" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="158"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
