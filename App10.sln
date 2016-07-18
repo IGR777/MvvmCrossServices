@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App10.Droid", "App10\App10.Droid\App10.Droid.csproj", "{81A9D4FB-3DA3-4669-BEE0-F7E908D48645}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App10.Droid", "App10.Droid\App10.Droid.csproj", "{81A9D4FB-3DA3-4669-BEE0-F7E908D48645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App10.iOS", "App10\App10.iOS\App10.iOS.csproj", "{CA56BCF6-6EB2-46CB-A870-D6DB16F86EEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App10.iOS", "App10.iOS\App10.iOS.csproj", "{CA56BCF6-6EB2-46CB-A870-D6DB16F86EEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App10", "App10\App10\App10.csproj", "{011F9C8F-6221-437E-B593-03BCDB339973}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App10", "App10\App10.csproj", "{011F9C8F-6221-437E-B593-03BCDB339973}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
