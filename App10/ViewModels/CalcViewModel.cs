@@ -1,4 +1,6 @@
+using App10.Services;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 
 namespace App10.ViewModels
 {
@@ -34,10 +36,13 @@ namespace App10.ViewModels
             {
                 return new MvxCommand(()=>
                 {
-                    if (Arg1.HasValue && Arg2.HasValue)
-                        Result = (Arg1.Value + Arg2.Value).ToString();
-                    else
+
+                    var service = ServiceLocator.Instance.Resolve<ICalcService>();
+                    var result = service.Calculate(Arg1, Arg2);
+                    if (result == null)
                         Result = "";
+                    else
+                        Result = result.ToString();
                 });
             }
         } 
